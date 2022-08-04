@@ -27,7 +27,7 @@ public class MyLogCounterRegistry extends StepMeterRegistry {
 
     private final AtomicLong exportNumber = new AtomicLong(0);
 
-    public MyLogCounterRegistry(Duration step) {
+    public MyLogCounterRegistry(Duration step, Logger logger) {
         this(
                 new StepRegistryConfig() {
                     @Override
